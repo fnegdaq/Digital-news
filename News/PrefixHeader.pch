@@ -1,0 +1,78 @@
+//
+//  PrefixHeader.pch
+//  News
+//
+//  Created by lanou3g on 15/3/11.
+//  Copyright (c) 2015年 lxf. All rights reserved.
+//
+
+#ifndef News_PrefixHeader_pch
+#endif
+#define News_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#pragma mark------------------------BYDailyNews-master--------------------------
+
+#define kStatusHeight 20
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define padding 20
+#define itemPerLine 4
+#define kItemW (kScreenW-padding*(itemPerLine+1))/itemPerLine
+#define kItemH 25
+
+typedef enum{
+    topViewClick = 0,
+    FromTopToTop = 1,
+    FromTopToTopLast = 2,
+    FromTopToBottomHead = 3,
+    FromBottomToTopLast = 4
+} animateType;
+
+#pragma mark-------------------------self write---------------------------------
+
+#define ViewHeight [UIScreen mainScreen].bounds.size.height
+#define ViewWidth [UIScreen mainScreen].bounds.size.width
+#define ViewSize [UIScreen mainScreen].bounds
+
+#pragma mark------------------------------HomePage URL(首页)-------------------------------------
+#define HomePageUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/1?pageNo=1&pageSize=20"                                                             //首页
+#define CameraUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/500?pageNo=1&pageSize=20"                                                             //(相机)
+#define PPCUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/400?pageNo=1&pageSize=20"                                                             //(平板)
+#define CaseUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/440100?pageNo=1&pageSize=20"                                                             //(行情)
+#define VidiconUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/800?pageNo=1&pageSize=20"                                                             //(摄像机)
+#define SuperPCUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/301?pageNo=1&pageSize=20"                                                             //(超极本)
+#define TVUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/900?pageNo=1&pageSize=20"
+                                                                                      //(电视)
+#define DIYUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/120?pageNo=1&pageSize=20"                                                             //(DIY)
+#define HouseUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/600?pageNo=1&pageSize=20"                                                             //(家电)
+#define IphoneUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/5?pageNo=1&pageSize=20"                                                             //(iPhone)
+#define NewsUrl @"http://mrobot.pconline.com.cn/v2/cms/channels/2?pageNo=1&pageSize=20"                                                             //(新闻)
+
+#pragma mark-------------------------------Price URL(报价)---------------------------------------
+#define PriceUrl @"http://lib3.wap.zol.com.cn/index.php?c=Iphone_37o_Subcate&noParam=1&vs=iph370"
+
+#pragma mark------------------------------Picture URL(图赏)--------------------------------------
+#define PictureUrl @"http://lib.wap.zol.com.cn/ipj/tushang.php?page=1&retina=1&vs=iph382"
+
+//#ifdef DEBUG
+//#define RELEASE_SAFELY(__Pointer) [__Pointer release];
+//#else
+#define RELEASE_SAFELY(__Pointer) [__Pointer release],__Pointer = nil;
+//#endif
+
+/**
+ *  Description
+ */
+#define BIGTHANI5S (([[UIScreen mainScreen] bounds].size.height)>568)
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#endif
