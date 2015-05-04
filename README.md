@@ -2,6 +2,7 @@
 
 这是我做的一个仿照中关村在线的科技新闻类APP
 
-上传的目的:   
-           1.gitHub 一直下一些demo和开源库,都没上传过,熟练一下~ 毕竟大牛都在用,要向大牛看起嘛~   
-           2.记录下自己的学习成果,也算督促一下自己
+<img src="http://ww1.sinaimg.cn/mw690/696cf20cgw1ersaift6blj20ku1127b8.jpg"  alt="首页" height="320" width="200" />
+<img src="http://ww2.sinaimg.cn/mw690/696cf20cgw1ersaih6l61j20ku112tcl.jpg"  alt="报价" height="320" width="200" />
+<img src="http://ww2.sinaimg.cn/mw690/696cf20cgw1ersap1d7tkj20ku112wlf.jpg"  alt="图赏" height="320" width="200" />
+<img src="http://ww1.sinaimg.cn/mw690/696cf20cgw1ersap3m0t1j20ku11278v.jpg"  alt="设置" height="320" width="200" />
